@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+  <header class="comtainer">
+    <nav class="mx-10">
+      <div class="navbar bg-base-100 shadow-sm">
+          <div class="flex-1">
+            <div class="flex items-center">
+              <div class="w-15">
+                  <img src="./assets/logo.png" alt="">
+              </div>
+              <div>
+                  <h2 class="text-5xl">Dev <span class="font-bold">Board</span></h2>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <a href="./index.html">
+              <button class="btn btn-primary text-4xl h-20 w-50">Back</button>
+            </a>
+          </div>
+        </div>
+  </nav>
+  </header>
+    <main>
+        <h1 class="text-8xl font-bold text-red-500 text-center">Answer</h1>
+        <div class="mx-10">
+            <div class="collapse bg-base-100 border-base-300 border text-5xl">
+                <input type="checkbox" />
+                <div class="collapse-title font-semibold">Question-1: What are the different ways to select an element in the DOM?</div>
+                <div class="collapse-content text-3xl">
+
+                    DOM-এ HTML উপাদান নির্বাচন করার জন্য নিম্নলিখিত পদ্ধতিগুলি ব্যবহার করা যায়ঃ
+
+                    document.getElementById('id') → নির্দিষ্ট id সহ উপাদান নির্বাচন করে।
+                    
+                    document.getElementsByClassName('class') → নির্দিষ্ট class সহ সব উপাদান নির্বাচন করে।
+                    
+                    document.getElementsByTagName('tag') → নির্দিষ্ট tag নামের সব উপাদান নির্বাচন করে।
+                    
+                    document.querySelector('selector') → প্রথম উপাদান নির্বাচন করে যা নির্দিষ্ট CSS সিলেক্টরের সাথে মেলে।
+                    
+                    document.querySelectorAll('selector') → সমস্ত উপাদান নির্বাচন করে যা নির্দিষ্ট CSS সিলেক্টরের সাথে মেলে।
+                </div>
+              </div>
+
+              <div class="collapse bg-base-100 border-base-300 border text-5xl">
+                <input type="checkbox" />
+                <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
+                <div class="collapse-content text-3xl">
+                    প্রপার্টিকাজinnerHTMLHTML ট্যাগ সহ সম্পূর্ণ কন্টেন্ট পায় বা সেট করে।innerTextশুধুমাত্র দৃশ্যমান (visible) টেক্সট পায় বা সেট করে।textContentসমস্ত টেক্সট পায়, এমনকি লুকানো (display: none;) থাকলেও। 
+                </div>
+              </div>
+
+              <div class="collapse bg-base-100 border-base-300 border text-5xl">
+                <input type="checkbox" />
+                <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?</div>
+                <div class="collapse-content text-3xl">
+                    ইভেন্ট ডেলিগেশন হল এমন একটি কৌশল যেখানে ইভেন্ট শোনার জন্য শিশুর পরিবর্তে মূল প্যারেন্ট উপাদানকে ব্যবহার করা হয়। এটি কম মেমোরি ব্যবহার করে এবং কর্মক্ষমতা উন্নত করে।
+                </div>
+              </div>
+
+              <div class="collapse bg-base-100 border-base-300 border text-5xl">
+                <input type="checkbox" />
+                <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?</div>
+                <div class="collapse-content text-3xl">
+                    ইভেন্ট বুদবুদ হল এমন একটি প্রক্রিয়া যেখানে একটি উপাদানে ইভেন্ট ট্রিগার হলে, তা তার প্যারেন্ট এবং পূর্বপুরুষ উপাদানগুলিতে গিয়ে পৌঁছায়
+                </div>
+              </div>
+
+              <div class="collapse bg-base-100 border-base-300 border text-5xl">
+                <input type="checkbox" />
+                <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+                <div class="collapse-content text-3xl">
+                // সরাসরি উপাদান মুছে ফেলা // অথবা item.parentNode.removeChild(item); 
+                    
+                    এগুলো ব্যবহার করে DOM-এ উপাদান তৈরি, যোগ এবং মুছে ফেলা যায়।
+                </div>
+              </div>
+
+              
+        </div>
+    </main>
+</body>
+</html>
