@@ -25,7 +25,7 @@
                 <div class="flex">
                   <div class="flex pr-8 items-center">
                     <img src="./assets/checkbox.png" alt="">
-                    <span id="totalClicks" class="text-2xl pl-2 font-bold">0</span>
+                    <span id="count" class="text-2xl pl-2 font-bold">24</span>
                   </div>
                   <div>
                     <button id="color-button" class="btn rounded-full"><img src="./assets/theme-btn.png" alt=""></button>
@@ -52,7 +52,7 @@
                     <img class="h-8 pr-2" src="./assets/checkbox.png" alt="">
                     <div>
                       <p>Task Assigned </p>
-                    <h2>05</h2>
+                    <h2 id="mines">05</h2>
                     </div>
                   </div>
 
@@ -91,7 +91,7 @@
                           </div>
 
                           <div id="btn-1-pa" class="card-actions justify-end">
-                            <button onclick="disable(this),totalClick(1)" id="btn-1" class="btn btn-primary">Completed</button>
+                            <button onclick="disable(this)" id="btn-1" class="btn btn-primary">Completed</button>
                           </div>
                         </div>
                       </div>
@@ -114,7 +114,7 @@
                           </div>
 
                           <div class="card-actions justify-end">
-                            <button onclick="disable(this)" class="btn btn-primary">Completed</button>
+                            <button id="btn-1" onclick="disable(this)" class="btn btn-primary">Completed</button>
                           </div>
                         </div>
                       </div>
@@ -137,7 +137,7 @@
                           </div>
 
                           <div class="card-actions justify-end">
-                            <button onclick="disable(this)" class="btn btn-primary">Completed</button>
+                            <button id="btn-1" onclick="disable(this)" class="btn btn-primary">Completed</button>
                           </div>
                         </div>
                       </div>
@@ -160,7 +160,7 @@
                           </div>
 
                           <div class="card-actions justify-end">
-                            <button onclick="disable(this)" class="btn btn-primary">Completed</button>
+                            <button id="btn-1" onclick="disable(this)" class="btn btn-primary">Completed</button>
                           </div>
                         </div>
                       </div>
@@ -183,7 +183,7 @@
                           </div>
 
                           <div class="card-actions justify-end">
-                            <button onclick="disable(this)" class="btn btn-primary">Completed</button>
+                            <button id="btn-1" onclick="disable(this)" class="btn btn-primary">Completed</button>
                           </div>
                         </div>
                       </div>
@@ -216,7 +216,8 @@
 
             <div class="bg-slate-100 rounded-lg">
               <h1 class="text-5xl text-center bg-slate-100">Transection History</h1>
-              <h1 class="text-5xl text-center bg-slate-100"><button class="btn btn-active btn-primary">Clear Hestory</button></h1>
+              <h1 class="text-5xl text-center bg-slate-100"><button id="clear-his" class="btn btn-active btn-primary">Clear Hestory</button></h1>
+              <p id="history"></p>
               
             </div>
 
