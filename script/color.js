@@ -1,6 +1,7 @@
-function makeYellow () {
-    document.body.style.backgroundColor = 'yellow';
-}
-function makered () {
-    document.body.style.backgroundColor = 'red';
-}
+const  butoonColor1 = document.getElementById("color-button");
+const changeBg = () => {
+    const haxVal = Math.floor(Math.random() * 0xffffff).
+    toString(16);
+    document.body.style.background = `#${haxVal}`;
+};
+butoonColor1.addEventListener("click", changeBg);

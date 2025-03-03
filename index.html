@@ -7,11 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-slate-400">
+<body class="bg-slate-400 p-10">
 
-    <header class="m-auto">
+    <header class="m-auto p-5 ">
         <nav class="">
-            <div class="navbar bg-base-100 shadow-sm">
+            <div class="navbar bg-base-100 shadow-sm rounded-md">
                 <div class="flex-1">
                   <div class="flex items-center">
                     <div class="w-8">
@@ -25,10 +25,10 @@
                 <div class="flex">
                   <div class="flex pr-8 items-center">
                     <img src="./assets/checkbox.png" alt="">
-                    <h2 id="btn-conector" class="text-2xl pl-2 font-bold">0</h2>
+                    <span id="totalClicks" class="text-2xl pl-2 font-bold">0</span>
                   </div>
                   <div>
-                    <button onclick="makeYellow()"><img src="./assets/theme-btn.png" alt=""></button>
+                    <button id="color-button" class="btn rounded-full"><img src="./assets/theme-btn.png" alt=""></button>
                   </div>
                 </div>
               </div>
@@ -39,16 +39,16 @@
 
 
 
-    <main>
-        <section class="mt-5 bg-white">
-            <div class="grid grid-cols-2 gap-4">
+    <main class="w-fit p-5">
+        <section class="mt-5 gap-5 w-fit rounded-md">
+            <div class="grid grid-cols-2 gap-8 rounded-md">
               
 
                 
 
-                <div class="grid grid-cols-3 gap-4 pt-2 ">
+                <div class="grid grid-cols-3 gap-4 pt-2 rounded-md">
 
-                  <div class="flex bg-slate-100 items-center justify-center">
+                  <div class="flex bg-slate-100 items-center justify-center rounded-md">
                     <img class="h-8 pr-2" src="./assets/checkbox.png" alt="">
                     <div>
                       <p>Task Assigned </p>
@@ -57,7 +57,7 @@
                   </div>
 
                   <a href="./answer.html">
-                  <div id="login-iteam" class="flex bg-slate-100 items-center justify-center">
+                  <div id="login-iteam" class="flex bg-slate-100 items-center justify-center rounded-md">
                     <img class="h-15 pr-2" src="./assets/board.png" alt="">
                     <div>
                     <h2 class="text-xl">Discover Something New Today!</h2>
@@ -66,7 +66,7 @@
                   </a>
 
 
-                  <div class="flex bg-slate-100 items-center justify-center">
+                  <div class="flex bg-slate-100 items-center justify-center rounded-md">
                     <img class="h-8 pr-2" src="./assets/calender.png" alt="">
                     <div>
                       <p>Wed ,
@@ -77,7 +77,7 @@
 
                   <!-- 1 -->
                   <div class="card card-side bg-slate-100 shadow-xl">
-                      <div class="card-body">
+                      <div class="card-body rounded-md">
                         <p>ShopEase</p>
                         <h2 class="card-title">Fix Mobile Button Issue </h2>
                         <div class="bg-white ">
@@ -91,7 +91,7 @@
                           </div>
 
                           <div id="btn-1-pa" class="card-actions justify-end">
-                            <button onclick="disable(this)" id="btn-1" class="btn btn-primary">Completed</button>
+                            <button onclick="disable(this),totalClick(1)" id="btn-1" class="btn btn-primary">Completed</button>
                           </div>
                         </div>
                       </div>
@@ -206,7 +206,7 @@
                           </div>
 
                           <div class="card-actions justify-end">
-                            <button onclick="disable(this)" class="btn btn-primary">Completed</button>
+                            <button onclick="disable(this),alert('All Compelet')" class="btn btn-primary">Completed</button>
                           </div>
                         </div>
                       </div>
@@ -214,21 +214,24 @@
 
             </div>
 
-            <div class="bg-slate-100">
+            <div class="bg-slate-100 rounded-lg">
               <h1 class="text-5xl text-center bg-slate-100">Transection History</h1>
               <h1 class="text-5xl text-center bg-slate-100"><button class="btn btn-active btn-primary">Clear Hestory</button></h1>
               
             </div>
 
-            
 
 
         </section>
 
     </main>
+    <footer>
+
+    </footer>
 
 <script src="./script/color.js"></script>
 <script src="./script/taskcom.js"></script>
 <script src="./script/diseable.js"></script>
+<script src="./script/button.js"></script>
 </body>
 </html>
